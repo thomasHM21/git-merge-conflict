@@ -3,6 +3,7 @@ import java.util.List;
 
 public class BankAccount implements AccountDetails {
     private List<Transaction> transactions;
+    private String accountOwner;
 
     public BankAccount() {
         this.transactions = new ArrayList<>();
