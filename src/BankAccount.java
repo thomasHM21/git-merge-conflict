@@ -5,8 +5,13 @@ public class BankAccount implements AccountDetails {
     private List<Transaction> transactions;
     private String accountOwner;
 
-    public BankAccount() {
+    public BankAccount(String accountOwner) {
         this.transactions = new ArrayList<>();
+        this.accountOwner = accountOwner;
+    }
+
+    public String getAccountOwner() {
+        return accountOwner;
     }
 
     public List<Transaction> getTransactions() {
