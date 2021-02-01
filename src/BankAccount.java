@@ -8,7 +8,7 @@ public class BankAccount implements AccountDetails {
 
     public BankAccount() {
         this.transactions = new ArrayList<>();
-        this. created = LocalDate.now();
+        this.created = LocalDate.now();
     }
 
     public List<Transaction> getTransactions() {
