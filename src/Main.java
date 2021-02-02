@@ -5,6 +5,7 @@ public class Main {
 
         bankAccount.addTransaction(new Deposit(10));
         bankAccount.addTransaction(new Withdraw(10));
+        bankAccount.addTransaction((new Transfer(5,"Thomas")));
 
         bankAccount.printTransactions();
     }
