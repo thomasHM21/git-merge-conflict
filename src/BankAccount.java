@@ -7,7 +7,7 @@ public class BankAccount implements AccountDetails {
     private LocalDate created;
     private String accountOwner;
 
-    public BankAccount() {
+    public BankAccount(String accountOwner) {
         this.transactions = new ArrayList<>();
         this.created = LocalDate.now();
         this.accountOwner = accountOwner;
